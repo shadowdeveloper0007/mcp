@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "rent-manager-mcp"
 version = "0.1.0"
@@ -13,3 +17,20 @@ dependencies = [
     "python-dotenv",
     "pydantic>=2.0"
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[project.scripts]
+rent-manager-mcp = "app.cli:main"
+rent-manager-backend = "backend.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["app*", "backend*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
