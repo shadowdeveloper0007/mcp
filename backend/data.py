@@ -1,7 +1,3 @@
-# This is our fake database
-# In a real project this would be a real database like PostgreSQL
-# For learning purposes, plain Python dictionaries work perfectly
-
 TENANTS = [
     {
         "id": "T001",
@@ -10,7 +6,7 @@ TENANTS = [
         "phone": "9876543210",
         "email": "rahul@email.com",
         "rent_amount": 25000,
-        "paid_this_month": True
+        "paid_this_month": True,
     },
     {
         "id": "T002",
@@ -19,7 +15,7 @@ TENANTS = [
         "phone": "9123456780",
         "email": "priya@email.com",
         "rent_amount": 18000,
-        "paid_this_month": False
+        "paid_this_month": False,
     },
     {
         "id": "T003",
@@ -28,7 +24,7 @@ TENANTS = [
         "phone": "9988776655",
         "email": "amit@email.com",
         "rent_amount": 30000,
-        "paid_this_month": False
+        "paid_this_month": False,
     },
     {
         "id": "T004",
@@ -37,8 +33,8 @@ TENANTS = [
         "phone": "9871234560",
         "email": "sneha@email.com",
         "rent_amount": 22000,
-        "paid_this_month": True
-    }
+        "paid_this_month": True,
+    },
 ]
 
 UNITS = [
@@ -46,8 +42,8 @@ UNITS = [
     {"unit": "7A", "status": "occupied", "rent": 18000, "floor": 7},
     {"unit": "12C", "status": "occupied", "rent": 30000, "floor": 12},
     {"unit": "2A", "status": "occupied", "rent": 22000, "floor": 2},
-    {"unit": "5D", "status": "vacant",   "rent": 20000, "floor": 5},
-    {"unit": "9B", "status": "vacant",   "rent": 27000, "floor": 9},
+    {"unit": "5D", "status": "vacant", "rent": 20000, "floor": 5},
+    {"unit": "9B", "status": "vacant", "rent": 27000, "floor": 9},
 ]
 
 MAINTENANCE = [
@@ -56,20 +52,20 @@ MAINTENANCE = [
         "unit": "4B",
         "issue": "Leaking tap in bathroom",
         "status": "open",
-        "priority": "high"
+        "priority": "high",
     },
     {
         "id": "M002",
         "unit": "7A",
         "issue": "AC not cooling",
         "status": "open",
-        "priority": "normal"
+        "priority": "normal",
     },
     {
         "id": "M003",
         "unit": "12C",
         "issue": "Broken window latch",
         "status": "resolved",
-        "priority": "low"
-    }
+        "priority": "low",
+    },
 ]

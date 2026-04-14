@@ -1,0 +1,15 @@
+[project]
+name = "rent-manager-mcp"
+version = "0.1.0"
+description = "FastMCP server for the Rent Manager demo backend"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "mcp[cli]",
+    "httpx",
+    "python-dotenv",
+    "pydantic>=2.0"
+]
